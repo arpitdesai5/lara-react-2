@@ -59801,11 +59801,9 @@ var TableRow = function (_Component) {
     value: function handleSubmit(event) {
       event.preventDefault();
       var uri = __WEBPACK_IMPORTED_MODULE_2__MyGlobleSetting__["a" /* default */].url + ('/api/posts/' + this.props.obj.id);
-      // axios.delete(uri);
-      // browserHistory.push('/add-item');
 
       axios.delete(uri).then(function (response) {
-        __WEBPACK_IMPORTED_MODULE_1_react_router__["browserHistory"].push('/add-item');
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["browserHistory"].push('/');
       });
     }
   }, {
